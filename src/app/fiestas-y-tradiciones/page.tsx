@@ -1,0 +1,89 @@
+import type { Metadata } from "next";
+import { SectionPageTitle } from "@/components/sections/SectionPageTitle";
+import { ImageWithTitle } from "@/components/ui/ImageWithTitle";
+
+export const metadata: Metadata = {
+  title: "Fiestas y tradiciones | San Bartolomé de Pinares",
+  description:
+    "Fiestas y tradiciones de San Bartolomé de Pinares: Luminarias, fiestas patronales, Semana Santa y costumbres centenarias del municipio.",
+};
+
+const fiestas = [
+  {
+    title: "Luminarias",
+    description: "Se celebra cada 16 de enero",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-1.png",
+    imageAlt: "Jinete atravesando las hogueras en las Luminarias",
+    href: "/fiestas-y-tradiciones/luminarias",
+  },
+  {
+    title: "San Bartolomé",
+    description: "Las fiestas patronales del pueblo",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-2.png",
+    imageAlt: "Procesión de las fiestas de San Bartolomé",
+    href: "/fiestas-y-tradiciones/san-bartolome",
+  },
+  {
+    title: "Semana Santa",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-3.png",
+    imageAlt: "Procesión de Semana Santa por el pueblo",
+  },
+  {
+    title: "Las Águedas",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-4.png",
+    imageAlt: "Mujeres con traje tradicional en las Águedas",
+  },
+  {
+    title: "El Belén",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-5.png",
+    imageAlt: "Belén tradicional del municipio",
+  },
+  {
+    title: "Camino de Santiago",
+    description: "Somos punto en el camino de Levante",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-6.png",
+    imageAlt: "Mapa del Camino de Levante",
+  },
+  {
+    title: "Sonsoles",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-7.png",
+    imageAlt: "Santuario de Sonsoles",
+  },
+  {
+    title: "Gastronomía",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/fiestas-tradiciones/fiestas-8.png",
+    imageAlt: "Rosquillas tradicionales",
+  },
+] as const;
+
+export default function FiestasYTradicionesPage() {
+  return (
+    <main className="flex flex-1 flex-col">
+      <SectionPageTitle
+        accentText="Qué hacer en San Bartolo"
+        title="Fiestas y tradiciones"
+        description="En San Bartolomé de Pinares las tradiciones no solo se recuerdan, se viven. A lo largo del año, sus fiestas reúnen a vecinos y visitantes para celebrar costumbres centenarias que mantienen viva la esencia del municipio."
+      />
+
+      <section className="flex w-full flex-col items-center bg-background-grey-light px-12 py-40">
+        <div className="flex w-full max-w-[1264px] flex-wrap content-start items-start justify-center gap-24">
+          {fiestas.map((fiesta) => (
+            <ImageWithTitle
+              key={fiesta.title}
+              title={fiesta.title}
+              description={fiesta.description}
+              imageSrc={fiesta.imageSrc}
+              imageAlt={fiesta.imageAlt}
+              href={"href" in fiesta ? fiesta.href : undefined}
+            />
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
