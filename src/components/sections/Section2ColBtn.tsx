@@ -1,14 +1,17 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
 
 export type Section2ColBtnProps = {
   accentText: string;
   title: string;
-  description: string;
+  description: ReactNode;
   imageSrc: string;
   imageAlt?: string;
   buttonLabel?: string;
   buttonHref?: string;
+  /** Fondo de sección; por defecto blanco */
+  backgroundClassName?: string;
   className?: string;
 };
 
@@ -21,12 +24,14 @@ export function Section2ColBtn({
   imageAlt = "",
   buttonLabel = "Saber más",
   buttonHref,
+  backgroundClassName = "bg-background-white",
   className,
 }: Section2ColBtnProps) {
   return (
     <section
       className={[
-        "flex w-full flex-wrap content-center items-center justify-center gap-[42px] bg-background-white px-12 py-80",
+        "flex w-full flex-wrap content-center items-center justify-center gap-[42px] px-12 py-80",
+        backgroundClassName,
         className ?? "",
       ]
         .filter(Boolean)
@@ -39,9 +44,9 @@ export function Section2ColBtn({
         <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
           {title}
         </h2>
-        <p className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph">
-          {description}
-        </p>
+        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-4">
+          {typeof description === "string" ? <p>{description}</p> : description}
+        </div>
         {buttonHref ? (
           <Button href={buttonHref}>{buttonLabel}</Button>
         ) : (

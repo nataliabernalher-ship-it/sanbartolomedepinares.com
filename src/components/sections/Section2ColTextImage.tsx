@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export type Section2ColTextImageLayout = "default" | "reverse";
 
 export type Section2ColTextImageProps = {
-  title: string;
+  title?: string;
   children: ReactNode;
   imageSrc: string;
   imageAlt?: string;
@@ -35,9 +35,11 @@ export function Section2ColTextImage({
         .join(" ")}
     >
       <div className="flex w-full max-w-[612px] flex-col items-start justify-center gap-24">
-        <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
-          {title}
-        </h2>
+        {title ? (
+          <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+            {title}
+          </h2>
+        ) : null}
         <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">
           {children}
         </div>

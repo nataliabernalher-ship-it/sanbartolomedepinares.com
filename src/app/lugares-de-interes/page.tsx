@@ -1,0 +1,120 @@
+import type { Metadata } from "next";
+import { SectionPageTitle } from "@/components/sections/SectionPageTitle";
+import { ImageWithTitle } from "@/components/ui/ImageWithTitle";
+
+export const metadata: Metadata = {
+  title: "Lugares de interés | San Bartolomé de Pinares",
+  description:
+    "Descubre los lugares más representativos de San Bartolomé de Pinares: iglesia, ermitas, plazas, parques y espacios naturales.",
+};
+
+const lugares = [
+  {
+    title: "Iglesia",
+    description:
+      "La Iglesia de San Bartolomé Apóstol de estilo herreriano",
+    imageSrc: "/images/lugares-de-interes/lugares-1.png",
+    imageAlt: "Iglesia de San Bartolomé Apóstol",
+    href: "/lugares-de-interes/iglesia",
+  },
+  {
+    title: "Ermitas",
+    description: "Las ermitas en la montaña que “guardan” el pueblo",
+    imageSrc: "/images/lugares-de-interes/lugares-2.png",
+    imageAlt: "Ermita de piedra en la ladera",
+    href: "/lugares-de-interes/ermitas",
+  },
+  {
+    title: "Plaza",
+    description: "La plaza de España lugar principal de reunión",
+    imageSrc: "/images/lugares-de-interes/lugares-3.png",
+    imageAlt: "Plaza de España",
+  },
+  {
+    title: "Ayuntamiento",
+    description: "El ayuntamiento está en la plaza de Cascorro",
+    imageSrc: "/images/lugares-de-interes/lugares-4.png",
+    imageAlt: "Ayuntamiento de San Bartolomé de Pinares",
+  },
+  {
+    title: "Fuente de Cascorro",
+    description: "La estatua dedicada a Eloy Gonzalo",
+    imageSrc: "/images/lugares-de-interes/lugares-5.png",
+    imageAlt: "Estatua de Eloy Gonzalo en la plaza de Cascorro",
+  },
+  {
+    title: "Tripa Ituero",
+    description: "Formación geológica símbolo del pueblo",
+    imageSrc: "/images/lugares-de-interes/lugares-6.png",
+    imageAlt: "Formación geológica Tripa Ituero",
+  },
+  {
+    title: "Jardín del hogar de los jubilados",
+    description: "Parque con bancos también llamado “parquecillo”",
+    imageSrc: "/images/lugares-de-interes/lugares-7.png",
+    imageAlt: "Jardín del hogar de los jubilados",
+  },
+  {
+    title: "Parque de Espinillos",
+    description: "Parque a las afueras, también llamado “parquezote”",
+    imageSrc: "/images/lugares-de-interes/lugares-8.png",
+    imageAlt: "Parque de Espinillos",
+  },
+  {
+    title: "Piscina",
+    description: "Piscina para el recreo abierta en los meses de verano",
+    imageSrc: "/images/lugares-de-interes/lugares-9.png",
+    imageAlt: "Piscina municipal",
+  },
+  {
+    title: "Pista deportiva",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/lugares-de-interes/lugares-10.png",
+    imageAlt: "Pista deportiva municipal",
+  },
+  {
+    title: "Jardín casa de la cultura",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/lugares-de-interes/lugares-11.png",
+    imageAlt: "Jardín de la casa de la cultura",
+  },
+  {
+    title: "Centro de enseñanzas",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/lugares-de-interes/lugares-12.png",
+    imageAlt: "Centro de enseñanzas",
+  },
+  {
+    title: "Bodega",
+    description: "Párrafo introductorio de la subcategoría",
+    imageSrc: "/images/lugares-de-interes/lugares-13.png",
+    imageAlt: "Bodega",
+  },
+] as const;
+
+export default function LugaresDeInteresPage() {
+  return (
+    <main className="flex flex-1 flex-col">
+      <SectionPageTitle
+        accentText="Qué ver en San Bartolo"
+        title="Lugares de interés"
+        description="Descubre los lugares más representativos de San Bartolomé de Pinares y adéntrate en un municipio donde historia, patrimonio y naturaleza se unen para ofrecer una experiencia auténtica."
+      />
+
+      <section className="flex w-full flex-col items-center bg-neutral-200/20 px-12 py-40">
+        <div className="flex w-full max-w-[1264px] flex-wrap content-start items-start justify-center gap-24">
+          {lugares.map((lugar) => (
+            <ImageWithTitle
+              key={lugar.title}
+              title={lugar.title}
+              description={lugar.description}
+              imageSrc={lugar.imageSrc}
+              imageAlt={lugar.imageAlt}
+              href={"href" in lugar ? lugar.href : undefined}
+            />
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

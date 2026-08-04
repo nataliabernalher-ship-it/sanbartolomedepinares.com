@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export type SectionHeroImageProps = {
-  accentText: string;
+  accentText?: string;
   title: string;
   description: string;
   imageSrc: string;
@@ -39,9 +39,11 @@ export function SectionHeroImage({
       </div>
 
       <div className="flex w-full max-w-[1280px] flex-col items-center gap-[19px] px-12">
-        <p className="font-bad-script w-full text-center text-[24px] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100">
-          {accentText}
-        </p>
+        {accentText ? (
+          <p className="font-bad-script w-full text-center text-[24px] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100">
+            {accentText}
+          </p>
+        ) : null}
         <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--size-32)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
           {title}
         </h1>
