@@ -1,26 +1,61 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "../styles/tokens.css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors */
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-150: var(--neutral-150);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-100: var(--primary-100);
+  --color-primary-300: var(--primary-300);
+
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-400: var(--secondary-400);
+
+  --color-accent-100: var(--accent-100);
+  --color-accent-300: var(--accent-300);
+
+  --color-text-title: var(--text-title);
+  --color-text-paragraph: var(--text-paragraph);
+
+  --color-background-white: var(--background-white);
+  --color-background-blue: var(--background-blue);
+  --color-background-green: var(--background-green);
+  --color-background-coral: var(--background-coral);
+  --color-background-grey-light: var(--background-grey-light);
+  --color-background-grey: var(--background-grey);
+
+  /* Fonts — next/font inyecta --font-*-src en <html> */
+  --font-montserrat: var(--font-montserrat-src), ui-sans-serif, sans-serif;
+  --font-lora: var(--font-lora-src), ui-serif, serif;
+  --font-bad-script: var(--font-bad-script-src), cursive;
+  --font-dm-serif: var(--font-dm-serif-src), ui-serif, serif;
+
+  /* Radii */
+  --radius-xs: var(--radii-xs);
+  --radius-s: var(--radii-s);
+  --radius-m: var(--radii-m);
+
+  /* Spacing scale (gap / padding / margin de Figma) */
+  --spacing-4: var(--gap-4);
+  --spacing-12: var(--gap-12);
+  --spacing-16: var(--gap-16);
+  --spacing-20: var(--gap-20);
+  --spacing-24: var(--gap-24);
+  --spacing-32: var(--gap-32);
+  --spacing-36: var(--padding-36);
+  --spacing-40: var(--gap-40);
+  --spacing-60: var(--gap-60);
+  --spacing-80: var(--margin-80);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--neutral-100);
+  color: var(--text-paragraph);
+  font-family: var(--font-lora);
 }

@@ -1,0 +1,57 @@
+import Image from "next/image";
+import type { ReactNode } from "react";
+
+export type Section2ColTextImageLayout = "default" | "reverse";
+
+export type Section2ColTextImageProps = {
+  title: string;
+  children: ReactNode;
+  imageSrc: string;
+  imageAlt?: string;
+  /** `default`: texto | imagen · `reverse`: imagen | texto */
+  layout?: Section2ColTextImageLayout;
+  className?: string;
+};
+
+/** Dos columnas texto + imagen — Figma node 38:461 (`section-2col-Text+image`) */
+export function Section2ColTextImage({
+  title,
+  children,
+  imageSrc,
+  imageAlt = "",
+  layout = "default",
+  className,
+}: Section2ColTextImageProps) {
+  const isReverse = layout === "reverse";
+
+  return (
+    <section
+      className={[
+        "flex w-full flex-col content-center items-center justify-center bg-neutral-100 px-12 py-80 lg:flex-row lg:flex-wrap",
+        isReverse ? "gap-[39px] lg:flex-row-reverse" : "gap-32",
+        className ?? "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      <div className="flex w-full max-w-[612px] flex-col items-start justify-center gap-24">
+        <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+          {title}
+        </h2>
+        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">
+          {children}
+        </div>
+      </div>
+
+      <div className="relative h-[320px] w-full max-w-[612px] shrink-0 overflow-hidden rounded-s sm:h-[400px] lg:h-[488px]">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 612px) 100vw, 612px"
+        />
+      </div>
+    </section>
+  );
+}

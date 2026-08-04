@@ -1,0 +1,95 @@
+/**
+ * Design tokens — San Bartolomé de Pinares
+ * Fuente: Figma `san-bartolo` (oFJPlzxOu28Muw49NtvugL)
+ * Extraídos de page_home, el municipio, las_luminarias
+ */
+
+:root {
+  /* ——— Color / Neutral ——— */
+  --neutral-100: #ffffff;
+  --neutral-150: #f7fafb;
+  --neutral-200: #d4e4ea;
+  --neutral-400: #9baab0;
+  --neutral-500: #1d292e;
+  --neutral-600: #000305;
+
+  /* ——— Color / Primary ——— */
+  --primary-100: #124455;
+  --primary-300: #9acce0;
+
+  /* ——— Color / Secondary ——— */
+  --secondary-100: #77975a;
+  --secondary-300: #afd091;
+  --secondary-400: #cceeae;
+
+  /* ——— Color / Accent ——— */
+  --accent-100: #c37259;
+  --accent-300: #ffab8f;
+
+  /* ——— Color / Text ——— */
+  --text-title: #1d292e;
+  --text-paragraph: #000305;
+
+  /* ——— Color / Background (aliases semánticos) ——— */
+  --background-white: #ffffff;
+  --background-blue: #9acce0;
+  --background-green: #afd091;
+  --background-coral: #ffab8f;
+  --background-grey-light: #f7fafb;
+  --background-grey: #d4e4ea;
+
+  /* ——— Size (font) ——— */
+  --size-14: 14px;
+  --size-16: 16px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+
+  /* ——— Weight ——— */
+  --weight-400: 400;
+  --weight-700: 700;
+
+  /* ——— Line height ——— */
+  --line-height-24: 24px;
+  --line-height-26: 26px;
+  --line-height-32: 32px;
+
+  /* ——— Letter spacing ——— */
+  --letter-spacing-0: 0px;
+  --letter-spacing-2: 2px;
+  --letter-spacing-4: 4px;
+
+  /* ——— Gap ——— */
+  --gap-4: 4px;
+  --gap-12: 12px;
+  --gap-16: 16px;
+  --gap-20: 20px;
+  --gap-24: 24px;
+  --gap-32: 32px;
+  --gap-40: 40px;
+  --gap-60: 60px;
+
+  /* ——— Padding ——— */
+  --padding-4: 4px;
+  --padding-12: 12px;
+  --padding-16: 16px;
+  --padding-20: 20px;
+  --padding-24: 24px;
+  --padding-36: 36px;
+  --padding-40: 40px;
+
+  /* ——— Margin ——— */
+  --margin-40: 40px;
+  --margin-60: 60px;
+  --margin-80: 80px;
+
+  /* ——— Radii ——— */
+  --radii-xs: 4px;
+  --radii-s: 8px;
+  --radii-m: 16px;
+
+  /* ——— Layout ——— */
+  --content-max: 1200px;
+  --text-max: 1000px;
+  --page-width: 1920px;
+}
