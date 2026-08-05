@@ -16,7 +16,7 @@ export default function ElMunicipioPage() {
       <SectionHeroImage
         title="El municipio"
         description="Es necesario un breve análisis urbanístico y social para conocer el municipio de San Bartolomé de Pinares. El lugar en el que se halla, a que se dedica su gente y las actividades que en él se desarrollan nos hará tener un conocimiento de la situación actual de nuestro pueblo."
-        imageSrc="/images/el-municipio/hero.jpg"
+        imageSrc="/images/el-municipio/hero-municipio.png"
         imageAlt="Vista del municipio de San Bartolomé de Pinares"
       />
 
