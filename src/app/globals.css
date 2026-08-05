@@ -54,6 +54,7 @@
   --spacing-40: var(--gap-40);
   --spacing-60: var(--gap-60);
   --spacing-80: var(--margin-80);
+  --spacing-120: var(--padding-120);
 }
 
 body {

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export type FirstSectionProps = {
   accentText?: string;
   title?: string;
@@ -19,7 +17,7 @@ export function FirstSection({
   return (
     <section
       className={[
-        "relative flex w-full flex-col items-center justify-center gap-24 px-12 py-60 sm:py-80",
+        "relative flex w-full flex-col items-center justify-center gap-24 px-12 py-120",
         className ?? "",
       ]
         .filter(Boolean)
@@ -27,12 +25,12 @@ export function FirstSection({
     >
       {backgroundSrc ? (
         <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-50">
-          <Image
+          {/* Móvil: object-cover para no aplastar. Desktop: escala Figma */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={backgroundSrc}
             alt=""
-            fill
-            className="object-cover object-[center_40%]"
-            sizes="100vw"
+            className="absolute inset-0 size-full object-cover object-[center_35%] lg:inset-auto lg:top-[-15.09%] lg:left-0 lg:h-[212.06%] lg:w-full lg:max-w-none lg:object-fill lg:object-center"
           />
         </div>
       ) : null}

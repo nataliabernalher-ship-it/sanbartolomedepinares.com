@@ -95,6 +95,7 @@ export const padding = {
   24: "24px",
   36: "36px",
   40: "40px",
+  120: "120px",
 } as const;
 
 export const margin = {
