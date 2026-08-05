@@ -41,9 +41,13 @@
   /* ——— Size (font) ——— */
   --size-14: 14px;
   --size-16: 16px;
+  --size-18: 18px;
   --size-20: 20px;
   --size-24: 24px;
   --size-32: 32px;
+
+  /* TitleCard — títulos en ImageWithTitle */
+  --size-title-card: var(--size-18);
 
   /* ——— Weight ——— */
   --weight-400: 400;

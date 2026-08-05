@@ -65,7 +65,7 @@ Implementación en código:
 
 | Tipo | Tokens |
 |------|--------|
-| Size | 14, 16, 20, 24, 32 |
+| Size | 14, 16, 18, 20, 24, 32 |
 | Weight | 400, 700 |
 | Line-height | 24, 26, 32 |
 | Letter-spacing | 0, 2, 4 |
@@ -79,6 +79,7 @@ Implementación en código:
 | Title h1 | Montserrat | 32 | 400 | 32 | 4 | uppercase |
 | Title h2 | Montserrat | 24 | 400 | 32 | 4 | uppercase |
 | Title h3 | Montserrat | 16 | 400 | 24 | 4 | uppercase |
+| TitleCard | Montserrat | 18 | 400 | 24 | 4 | uppercase |
 | Subtitle | Lora | 16 | 400 | 26 | 0 | — |
 | Paragraph | Lora | 16 | 400 | 24 | 0 | — |
 | Texto boton | Bad Script | 20 | 400 | 24 | 0 | — |

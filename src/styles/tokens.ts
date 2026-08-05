@@ -49,9 +49,12 @@ export const fonts = {
 export const fontSize = {
   14: "14px",
   16: "16px",
+  18: "18px",
   20: "20px",
   24: "24px",
   32: "32px",
+  /** Alias tipográfico TitleCard */
+  titleCard: "18px",
 } as const;
 
 export const fontWeight = {
@@ -150,6 +153,14 @@ export const textStyles = {
   titleH3: {
     fontFamily: fonts.montserrat,
     fontSize: fontSize[16],
+    fontWeight: fontWeight[400],
+    lineHeight: lineHeight[24],
+    letterSpacing: letterSpacing[4],
+    textTransform: "uppercase" as const,
+  },
+  titleCard: {
+    fontFamily: fonts.montserrat,
+    fontSize: fontSize.titleCard,
     fontWeight: fontWeight[400],
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[4],
