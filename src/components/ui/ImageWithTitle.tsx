@@ -31,7 +31,7 @@ export function ImageWithTitle({
         />
       </div>
       <div className="relative z-10 flex w-4/5 flex-col items-center justify-center gap-4 rounded-xs bg-secondary-300 p-12 text-center text-neutral-600">
-        <h3 className="font-montserrat w-full text-[length:var(--size-title-card)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-4)] uppercase">
+        <h3 className="font-montserrat w-full text-[length:var(--imagen-with-title-title-size)] leading-[var(--imagen-with-title-title-line-height)] font-normal tracking-[var(--imagen-with-title-title-letter-spacing)] uppercase">
           {title}
         </h3>
         <p className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)]">

@@ -53,8 +53,10 @@ export const fontSize = {
   20: "20px",
   24: "24px",
   32: "32px",
-  /** Alias tipográfico TitleCard */
+  /** @deprecated usar imagenWithTitleTitle / --imagen-with-title-title-size */
   titleCard: "18px",
+  textoBoton: "18px",
+  imagenWithTitleTitle: "18px",
 } as const;
 
 export const fontWeight = {
@@ -163,9 +165,18 @@ export const textStyles = {
   },
   titleCard: {
     fontFamily: fonts.montserrat,
-    fontSize: fontSize.titleCard,
+    fontSize: fontSize.imagenWithTitleTitle,
     fontWeight: fontWeight[400],
-    lineHeight: lineHeight[24],
+    lineHeight: lineHeight[32],
+    letterSpacing: letterSpacing[4],
+    textTransform: "uppercase" as const,
+  },
+  /** Figma `ImagenWithTitle-Title` */
+  imagenWithTitleTitle: {
+    fontFamily: fonts.montserrat,
+    fontSize: fontSize.imagenWithTitleTitle,
+    fontWeight: fontWeight[400],
+    lineHeight: lineHeight[32],
     letterSpacing: letterSpacing[4],
     textTransform: "uppercase" as const,
   },
@@ -183,12 +194,14 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[0],
   },
+  /** Figma `Texto boton` — Montserrat 18 (antes Bad Script 20) */
   button: {
-    fontFamily: fonts.badScript,
-    fontSize: fontSize[20],
+    fontFamily: fonts.montserrat,
+    fontSize: fontSize.textoBoton,
     fontWeight: fontWeight[400],
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[0],
+    textTransform: "uppercase" as const,
   },
   accentText: {
     fontFamily: fonts.badScript,

@@ -5,7 +5,7 @@ const buttonClassName = [
   "inline-flex items-center justify-center",
   "rounded-xs border border-solid border-neutral-500 bg-transparent",
   "px-36 py-20",
-  "font-bad-script text-[length:var(--size-20)] leading-[var(--line-height-24)] text-neutral-600 whitespace-nowrap",
+  "font-montserrat text-[length:var(--texto-boton-size)] leading-[var(--texto-boton-line-height)] font-normal tracking-[var(--texto-boton-letter-spacing)] text-neutral-600 uppercase whitespace-nowrap",
   "transition-colors duration-200",
   "hover:border-transparent hover:bg-secondary-400",
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500",
@@ -28,7 +28,7 @@ type ButtonAsLink = CommonProps &
 
 export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
-/** Botón outline — Figma node 38:124 (Default / hover) */
+/** Botón outline — Figma node 38:124; tipografía `Texto boton` (Montserrat 18) */
 export function Button({
   children = "Saber más",
   className,

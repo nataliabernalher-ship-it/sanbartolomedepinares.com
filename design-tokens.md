@@ -56,9 +56,9 @@ Implementación en código:
 
 | Token Figma | Familia | Rol |
 |-------------|---------|-----|
-| Font-family/Montserrat | Montserrat | Títulos, nav, links |
+| Font-family/Montserrat | Montserrat | Títulos, nav, links, botones |
 | Font-family/Lora | Lora | Párrafos, subtítulos |
-| Font-family/Bad Script | Bad Script | Botones, textos acento |
+| Font-family/Bad Script | Bad Script | Textos acento |
 | *(hardcoded en logo)* | DM Serif Display | Marca / logo |
 
 ### Escalas
@@ -70,20 +70,20 @@ Implementación en código:
 | Line-height | 24, 26, 32 |
 | Letter-spacing | 0, 2, 4 |
 
-### Text styles (composiciones)
+### Text styles (composiciones semánticas)
 
-| Estilo Figma | Familia | Size | Weight | LH | Tracking | Extra |
-|--------------|---------|------|--------|----|----------|-------|
-| Link | Montserrat | 14 | 400 | 24 | 2 | uppercase |
-| Link Selected | Montserrat | 14 | 700 | 24 | 2 | uppercase |
-| Title h1 | Montserrat | 32 | 400 | 32 | 4 | uppercase |
-| Title h2 | Montserrat | 24 | 400 | 32 | 4 | uppercase |
-| Title h3 | Montserrat | 16 | 400 | 24 | 4 | uppercase |
-| TitleCard | Montserrat | 18 | 400 | 24 | 4 | uppercase |
-| Subtitle | Lora | 16 | 400 | 26 | 0 | — |
-| Paragraph | Lora | 16 | 400 | 24 | 0 | — |
-| Texto boton | Bad Script | 20 | 400 | 24 | 0 | — |
-| Accent Text | Bad Script | 24 | 400 | 32 | 0 | — |
+| Estilo Figma | Familia | Size | Weight | LH | Tracking | Extra | CSS semántico |
+|--------------|---------|------|--------|----|----------|-------|---------------|
+| Link | Montserrat | 14 | 400 | 24 | 2 | uppercase | — |
+| Link Selected | Montserrat | 14 | 700 | 24 | 2 | uppercase | — |
+| Title h1 | Montserrat | 32 | 400 | 32 | 4 | uppercase | — |
+| Title h2 | Montserrat | 24 | 400 | 32 | 4 | uppercase | — |
+| Title h3 | Montserrat | 16 | 400 | 24 | 4 | uppercase | — |
+| ImagenWithTitle-Title | Montserrat | 18 | 400 | 32 | 4 | uppercase | `--imagen-with-title-title-*` |
+| Subtitle | Lora | 16 | 400 | 26 | 0 | — | — |
+| Paragraph | Lora | 16 | 400 | 24 | 0 | — | — |
+| Texto boton | Montserrat | 18 | 400 | 24 | 0 | uppercase | `--texto-boton-*` |
+| Accent Text | Bad Script | 24 | 400 | 32 | 0 | — | — |
 
 ---
 

@@ -46,9 +46,6 @@
   --size-24: 24px;
   --size-32: 32px;
 
-  /* TitleCard — títulos en ImageWithTitle */
-  --size-title-card: var(--size-18);
-
   /* ——— Weight ——— */
   --weight-400: 400;
   --weight-700: 700;
@@ -62,6 +59,22 @@
   --letter-spacing-0: 0px;
   --letter-spacing-2: 2px;
   --letter-spacing-4: 4px;
+
+  /* ——— Typography / Semantic (text styles Figma) ——— */
+  /* Texto boton — Montserrat Regular 18 / 24 / 0 */
+  --texto-boton-size: var(--size-18);
+  --texto-boton-weight: var(--weight-400);
+  --texto-boton-line-height: var(--line-height-24);
+  --texto-boton-letter-spacing: var(--letter-spacing-0);
+
+  /* ImagenWithTitle-Title — Montserrat Regular 18 / 32 / 4 */
+  --imagen-with-title-title-size: var(--size-18);
+  --imagen-with-title-title-weight: var(--weight-400);
+  --imagen-with-title-title-line-height: var(--line-height-32);
+  --imagen-with-title-title-letter-spacing: var(--letter-spacing-4);
+
+  /* Alias legacy TitleCard → ImagenWithTitle-Title */
+  --size-title-card: var(--imagen-with-title-title-size);
 
   /* ——— Gap ——— */
   --gap-2: 2px;
