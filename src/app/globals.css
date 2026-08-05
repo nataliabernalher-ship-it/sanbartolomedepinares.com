@@ -42,7 +42,9 @@
   --radius-m: var(--radii-m);
 
   /* Spacing scale (gap / padding / margin de Figma) */
+  --spacing-2: var(--gap-2);
   --spacing-4: var(--gap-4);
+  --spacing-8: var(--gap-8);
   --spacing-12: var(--gap-12);
   --spacing-16: var(--gap-16);
   --spacing-20: var(--gap-20);

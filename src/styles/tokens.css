@@ -64,7 +64,9 @@
   --letter-spacing-4: 4px;
 
   /* ——— Gap ——— */
+  --gap-2: 2px;
   --gap-4: 4px;
+  --gap-8: 8px;
   --gap-12: 12px;
   --gap-16: 16px;
   --gap-20: 20px;
