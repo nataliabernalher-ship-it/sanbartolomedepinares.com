@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   title: "San Bartolomé de Pinares",
   description:
     "Municipio de Ávila: historia, fiestas, lugares de interés e información útil para vecinos y visitantes.",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
