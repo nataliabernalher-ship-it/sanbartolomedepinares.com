@@ -35,6 +35,7 @@ const fiestas = [
     description: "Párrafo introductorio de la subcategoría",
     imageSrc: "/images/fiestas-tradiciones/semana-santa.png",
     imageAlt: "Procesión de Semana Santa por el pueblo",
+    href: "/fiestas-y-tradiciones/semana-santa",
   },
   {
     title: "Las Águedas",
