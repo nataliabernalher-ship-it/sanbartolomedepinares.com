@@ -21,7 +21,7 @@ export function SectionHeroImage({
   return (
     <section
       className={[
-        "flex w-full flex-col items-center gap-7 bg-neutral-150 py-24",
+        "flex w-full flex-col items-center gap-7 bg-neutral-150 px-12 py-24",
         className ?? "",
       ]
         .filter(Boolean)
