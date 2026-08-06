@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section2ColTextImage } from "@/components/sections/Section2ColTextImage";
+import { SectionBackToCategory } from "@/components/sections/SectionBackToCategory";
 import { SectionCajaColor } from "@/components/sections/SectionCajaColor";
 import { SectionHeroImage } from "@/components/sections/SectionHeroImage";
 
@@ -101,6 +102,8 @@ export default function CascorroPage() {
           episodios más emblemáticos de la historia militar española.
         </p>
       </Section2ColTextImage>
+
+      <SectionBackToCategory href="/historia" label="Volver a historia" />
     </main>
   );
 }

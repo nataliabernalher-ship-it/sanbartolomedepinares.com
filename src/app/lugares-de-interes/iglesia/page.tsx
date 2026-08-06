@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section2ColTextImage } from "@/components/sections/Section2ColTextImage";
+import { SectionBackToCategory } from "@/components/sections/SectionBackToCategory";
 import { SectionHeroImage } from "@/components/sections/SectionHeroImage";
 
 export const metadata: Metadata = {
@@ -339,6 +340,11 @@ export default function IglesiaPage() {
           castellano que se hallan en la sacristía.
         </p>
       </Section2ColTextImage>
+
+      <SectionBackToCategory
+        href="/lugares-de-interes"
+        label="Volver a lugares de interés"
+      />
     </main>
   );
 }

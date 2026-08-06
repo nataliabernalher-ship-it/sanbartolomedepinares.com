@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section2ColTextOnly } from "@/components/sections/Section2ColTextOnly";
+import { SectionBackToCategory } from "@/components/sections/SectionBackToCategory";
 import { SectionHeroImage } from "@/components/sections/SectionHeroImage";
 
 export const metadata: Metadata = {
@@ -60,6 +61,11 @@ export default function SonsolesPage() {
             </p>
           </>
         }
+      />
+
+      <SectionBackToCategory
+        href="/fiestas-y-tradiciones"
+        label="Volver a fiestas y tradiciones"
       />
     </main>
   );

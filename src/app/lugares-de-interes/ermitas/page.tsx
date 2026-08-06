@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Section1ColTextOnly } from "@/components/sections/Section1ColTextOnly";
 import { Section2ColTextImage } from "@/components/sections/Section2ColTextImage";
+import { SectionBackToCategory } from "@/components/sections/SectionBackToCategory";
 import { SectionHeroImage } from "@/components/sections/SectionHeroImage";
 import { SectionPageTitle } from "@/components/sections/SectionPageTitle";
 
@@ -208,6 +209,11 @@ export default function ErmitasPage() {
           y pasa a celebrarse en la Iglesia.
         </p>
       </Section1ColTextOnly>
+
+      <SectionBackToCategory
+        href="/lugares-de-interes"
+        label="Volver a lugares de interés"
+      />
     </main>
   );
 }

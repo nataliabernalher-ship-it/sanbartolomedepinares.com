@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section2ColTextImage } from "@/components/sections/Section2ColTextImage";
+import { SectionBackToCategory } from "@/components/sections/SectionBackToCategory";
 import { SectionHeroImage } from "@/components/sections/SectionHeroImage";
 
 export const metadata: Metadata = {
@@ -43,6 +44,11 @@ export default function CaminoSantiagoPage() {
           Bartolomé de Pinares.
         </p>
       </Section2ColTextImage>
+
+      <SectionBackToCategory
+        href="/fiestas-y-tradiciones"
+        label="Volver a fiestas y tradiciones"
+      />
     </main>
   );
 }
