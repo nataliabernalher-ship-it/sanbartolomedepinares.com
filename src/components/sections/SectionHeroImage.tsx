@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export type SectionHeroImageProps = {
   accentText?: string;
   title: string;
-  description: ReactNode;
+  description?: ReactNode;
   imageSrc: string;
   imageAlt?: string;
   className?: string;
@@ -48,9 +48,15 @@ export function SectionHeroImage({
         <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--size-32)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
           {title}
         </h1>
-        <div className="font-lora max-w-[800px] text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">
-          {typeof description === "string" ? <p>{description}</p> : description}
-        </div>
+        {description ? (
+          <div className="font-lora max-w-[800px] text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">
+            {typeof description === "string" ? (
+              <p>{description}</p>
+            ) : (
+              description
+            )}
+          </div>
+        ) : null}
       </div>
     </section>
   );
