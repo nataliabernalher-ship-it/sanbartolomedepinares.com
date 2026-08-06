@@ -46,12 +46,14 @@ const fiestas = [
     description: "Somos punto en el camino de Levante",
     imageSrc: "/images/fiestas-tradiciones/camino-santiago.png",
     imageAlt: "Mapa del Camino de Levante",
+    href: "/fiestas-y-tradiciones/camino-santiago",
   },
   {
     title: "Sonsoles",
     description: "Párrafo introductorio de la subcategoría",
-    imageSrc: "/images/fiestas-tradiciones/sonsoles.png",
+    imageSrc: "/images/fiestas-tradiciones/sonsoles/hero.png",
     imageAlt: "Santuario de Sonsoles",
+    href: "/fiestas-y-tradiciones/sonsoles",
   },
   {
     title: "Gastronomía",
