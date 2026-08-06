@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
 export type FirstSectionProps = {
   accentText?: string;
   title?: string;
@@ -14,10 +18,53 @@ export function FirstSection({
   backgroundSrc,
   className,
 }: FirstSectionProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const image = imageRef.current;
+    if (!section || !image) return;
+
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let rafId = 0;
+
+    const update = () => {
+      rafId = 0;
+      if (mediaQuery.matches) {
+        image.style.transform = "";
+        return;
+      }
+
+      const rect = section.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+      const progress = (viewHeight - rect.top) / (viewHeight + rect.height);
+      const offset = (progress - 0.5) * 320;
+      image.style.transform = `translate3d(0, ${offset}px, 0)`;
+    };
+
+    const onScroll = () => {
+      if (!rafId) rafId = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    mediaQuery.addEventListener("change", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      mediaQuery.removeEventListener("change", onScroll);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, [backgroundSrc]);
+
   return (
     <section
+      ref={sectionRef}
       className={[
-        "relative flex w-full flex-col items-center justify-center gap-24 px-12 py-120",
+        "relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-12 py-120",
         className ?? "",
       ]
         .filter(Boolean)
@@ -25,12 +72,13 @@ export function FirstSection({
     >
       {backgroundSrc ? (
         <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-50">
-          {/* Móvil: object-cover para no aplastar. Desktop: escala Figma */}
+          {/* Móvil: object-cover. Desktop: escala Figma. Extra altura para el recorrido parallax. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
+            ref={imageRef}
             src={backgroundSrc}
             alt=""
-            className="absolute inset-0 size-full object-cover object-[center_35%] lg:inset-auto lg:top-[-15.09%] lg:left-0 lg:h-[212.06%] lg:w-full lg:max-w-none lg:object-fill lg:object-center"
+            className="absolute top-[-20%] left-0 h-[140%] w-full object-cover object-[center_35%] will-change-transform lg:top-[-25%] lg:h-[240%] lg:max-w-none lg:object-fill lg:object-center"
           />
         </div>
       ) : null}
