@@ -24,6 +24,13 @@ const fiestas = [
     href: "/fiestas-y-tradiciones/san-bartolome",
   },
   {
+    title: "San Antonio de Padua",
+    description: "Fiesta en honor a «El Santo más rico»",
+    imageSrc: "/images/fiestas-tradiciones/antonio-padua.png",
+    imageAlt: "Celebración de San Antonio de Padua con el ganado",
+    href: "/fiestas-y-tradiciones/antonio-padua",
+  },
+  {
     title: "Semana Santa",
     description: "Párrafo introductorio de la subcategoría",
     imageSrc: "/images/fiestas-tradiciones/semana-santa.png",
@@ -40,6 +47,7 @@ const fiestas = [
     description: "Párrafo introductorio de la subcategoría",
     imageSrc: "/images/fiestas-tradiciones/belen.png",
     imageAlt: "Belén tradicional del municipio",
+    href: "/fiestas-y-tradiciones/el-belen",
   },
   {
     title: "Camino de Santiago",
