@@ -14,11 +14,11 @@ export default function Home() {
         description="La riqueza patrimonial y natural de San Bartolomé de Pinares se descubre en cada rincón. Iglesias, ermitas, paisajes de pinares y espacios cargados de historia convierten el municipio en un lugar donde tradición y naturaleza se encuentran."
         images={[
           {
-            src: "/images/home/mun-1.png",
+            src: "/images/home/mapa.png",
             alt: "Mapa del municipio",
           },
           {
-            src: "/images/home/mun-2.jpg",
+            src: "/images/home/vista-aerea.jpg",
             alt: "Vista aérea del municipio",
           },
         ]}
