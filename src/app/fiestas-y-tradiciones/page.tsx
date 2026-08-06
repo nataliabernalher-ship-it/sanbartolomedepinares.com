@@ -58,6 +58,7 @@ const fiestas = [
     description: "Párrafo introductorio de la subcategoría",
     imageSrc: "/images/fiestas-tradiciones/gastronomia.png",
     imageAlt: "Rosquillas tradicionales",
+    href: "/fiestas-y-tradiciones/gastronomia",
   },
 ] as const;
 
