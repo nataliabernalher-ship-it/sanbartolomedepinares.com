@@ -41,7 +41,7 @@ export function Section2ColBtn({
         <p className="font-bad-script w-full text-[24px] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100">
           {accentText}
         </p>
-        <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+        <h2 className="font-montserrat w-full text-[length:var(--title-h2-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h2-size-desktop)]">
           {title}
         </h2>
         <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-4">

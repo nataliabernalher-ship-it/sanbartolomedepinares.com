@@ -83,10 +83,10 @@ export function FirstSection({
         </div>
       ) : null}
 
-      <p className="font-bad-script relative z-10 w-full text-center text-[22px] leading-[var(--line-height-24)] text-accent-100 sm:text-[24px]">
+      <p className="font-bad-script relative z-10 w-full text-center text-[length:var(--accent-text-size-mobile)] leading-[var(--line-height-24)] text-accent-100 sm:text-[length:var(--accent-text-size-desktop)]">
         {accentText}
       </p>
-      <h1 className="font-montserrat relative z-10 max-w-[900px] text-center text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--size-32)]">
+      <h1 className="font-montserrat relative z-10 max-w-[900px] text-center text-[length:var(--title-h1-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h1-size-desktop)]">
         {title}
       </h1>
       <p className="font-lora relative z-10 max-w-[820px] text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph">

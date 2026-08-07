@@ -6,7 +6,7 @@ const baseClassName = [
   "text-[length:var(--size-14)] leading-[var(--line-height-24)]",
   "tracking-[var(--letter-spacing-2)] uppercase whitespace-nowrap",
   "transition-colors duration-200",
-  "hover:font-bold hover:text-accent-300",
+  "hover:font-bold hover:text-link-hover",
   "focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-500",
 ].join(" ");
 
@@ -29,7 +29,9 @@ export function Link({
 }: LinkProps) {
   const classes = [
     baseClassName,
-    selected ? "font-bold text-neutral-600" : "font-normal text-neutral-600",
+    selected
+      ? "font-bold text-link-selected"
+      : "font-normal text-link-default",
     className ?? "",
   ]
     .filter(Boolean)

@@ -36,11 +36,11 @@ export function Section2ColTextImage({
     >
       <div className="flex w-full max-w-[612px] flex-col items-start justify-center gap-24">
         {title ? (
-          <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+          <h2 className="font-montserrat w-full text-[length:var(--title-h2-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h2-size-desktop)]">
             {title}
           </h2>
         ) : null}
-        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&>*+*]:mt-6 [&_h3]:font-montserrat [&_h3]:text-[length:var(--size-24)] [&_h3]:leading-[var(--line-height-32)] [&_h3]:tracking-[var(--letter-spacing-4)] [&_h3]:text-text-title [&_h3]:uppercase">
+        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&>*+*]:mt-6 [&_h3]:font-montserrat [&_h3]:text-[length:var(--title-h2-size-mobile)] [&_h3]:leading-[var(--line-height-32)] [&_h3]:tracking-[var(--letter-spacing-4)] [&_h3]:text-text-title [&_h3]:uppercase sm:[&_h3]:text-[length:var(--title-h2-size-desktop)]">
           {children}
         </div>
       </div>

@@ -1,7 +1,7 @@
 # Design tokens — San Bartolomé de Pinares
 
 Extraídos de Figma: [san-bartolo](https://www.figma.com/design/oFJPlzxOu28Muw49NtvugL/san-bartolo)  
-Nodos analizados: `page_home` (55:1562), `el municipio` (55:1740), `las_luminarias` (55:1755)
+Nodo de componentes: [`07. Componentes` (78:1159)](https://www.figma.com/design/oFJPlzxOu28Muw49NtvugL/san-bartolo?node-id=78-1159)
 
 Implementación en código:
 
@@ -32,15 +32,18 @@ Implementación en código:
 | Primary/300 | `#9acce0` | = Background/Blue |
 | Secondary/100 | `#77975a` | Verde oscuro |
 | Secondary/300 | `#afd091` | = Background/Green |
+| Secondary/400 | `#cceeae` | Hover botón |
 | Accent/100 | `#c37259` | Coral texto / acento |
-| Accent/300 | `#ffab8f` | = Background/Coral |
+| Accent/300 | `#ffab8f` | = Background/Coral · **hover de links** |
 
-### Text & Background
+### Text, Link & Background
 
 | Token Figma | Valor |
 |-------------|-------|
 | Text/title | `#1d292e` |
 | Text/paragraph | `#000305` |
+| Link default / selected | `#000305` (`--link-default` / `--link-selected`) |
+| Link hover | `#ffab8f` (`--link-hover` = Accent/300) |
 | Background/White | `#ffffff` |
 | Background/Blue | `#9acce0` |
 | Background/Green | `#afd091` |
@@ -65,25 +68,37 @@ Implementación en código:
 
 | Tipo | Tokens |
 |------|--------|
-| Size | 14, 16, 18, 20, 24, 32 |
+| Size | 14, 16, 18, 20, **22**, 24, **26**, **30**, 32 |
 | Weight | 400, 700 |
 | Line-height | 24, 26, 32 |
 | Letter-spacing | 0, 2, 4 |
 
+### Responsive (móvil → desktop)
+
+| Uso | Móvil | Desktop | CSS |
+|-----|-------|---------|-----|
+| Title h1 | 24 | 32 | `--title-h1-size-mobile` / `-desktop` |
+| Title h2 | 20 | 24 | `--title-h2-size-mobile` / `-desktop` |
+| Accent Text | 22 | 24 | `--accent-text-size-mobile` / `-desktop` |
+| Logo nav | 20 | 24 | `--logo-nav-size-mobile` / `-desktop` |
+| Logo footer | 26 | 30 | `--logo-footer-size-mobile` / `-desktop` |
+
 ### Text styles (composiciones semánticas)
 
-| Estilo Figma | Familia | Size | Weight | LH | Tracking | Extra | CSS semántico |
-|--------------|---------|------|--------|----|----------|-------|---------------|
-| Link | Montserrat | 14 | 400 | 24 | 2 | uppercase | — |
-| Link Selected | Montserrat | 14 | 700 | 24 | 2 | uppercase | — |
-| Title h1 | Montserrat | 32 | 400 | 32 | 4 | uppercase | — |
-| Title h2 | Montserrat | 24 | 400 | 32 | 4 | uppercase | — |
-| Title h3 | Montserrat | 16 | 400 | 24 | 4 | uppercase | — |
-| ImagenWithTitle-Title | Montserrat | 18 | 400 | 32 | 4 | uppercase | `--imagen-with-title-title-*` |
+| Estilo Figma | Familia | Size | Weight | LH | Tracking | Extra | Color |
+|--------------|---------|------|--------|----|----------|-------|-------|
+| Link | Montserrat | 14 | 400 | 24 | 2 | uppercase | Neutral/600 |
+| Link Selected | Montserrat | 14 | 700 | 24 | 2 | uppercase | Neutral/600 |
+| Link hover | Montserrat | 14 | 700 | 24 | 2 | uppercase | **Accent/300** |
+| Title h1 | Montserrat | 32 | 400 | 32 | 4 | uppercase | Text/title |
+| Title h2 | Montserrat | 24 | 400 | 32 | 4 | uppercase | Text/title |
+| Title h3 | Montserrat | 16 | 400 | 24 | 4 | uppercase | Text/title |
+| ImagenWithTitle-Title | Montserrat | 18 | 400 | 32 | 4 | uppercase | — |
+| ImagenWithTitle-Paragrap | Lora | **14** | 400 | 24 | 0 | — | — |
 | Subtitle | Lora | 16 | 400 | 26 | 0 | — | — |
 | Paragraph | Lora | 16 | 400 | 24 | 0 | — | — |
-| Texto boton | Montserrat | 18 | 400 | 24 | 0 | uppercase | `--texto-boton-*` |
-| Accent Text | Bad Script | 24 | 400 | 32 | 0 | — | — |
+| Texto boton | Montserrat | 18 | 400 | 24 | 0 | uppercase | — |
+| Accent Text | Bad Script | 24 | 400 | 32 | 0 | — | Accent/100 |
 
 ---
 
@@ -117,5 +132,6 @@ Implementación en código:
   <p className="font-lora text-[length:var(--size-16)] leading-[var(--line-height-26)]">
     Párrafo
   </p>
+  <a className="hover:text-link-hover">Link</a>
 </div>
 ```

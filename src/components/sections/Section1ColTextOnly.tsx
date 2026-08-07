@@ -22,7 +22,7 @@ export function Section1ColTextOnly({
         .join(" ")}
     >
       <div className="flex w-full max-w-[900px] flex-col items-start justify-center gap-24">
-        <h2 className="font-montserrat max-w-[612px] text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+        <h2 className="font-montserrat max-w-[612px] text-[length:var(--title-h2-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h2-size-desktop)]">
           {title}
         </h2>
         <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">

@@ -31,10 +31,21 @@ export function ImageWithTitle({
         />
       </div>
       <div className="relative z-10 flex w-4/5 flex-col items-center justify-center gap-4 rounded-xs bg-secondary-300 p-12 text-center text-neutral-600">
+        {href ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src="/icons/arrow-up-right.svg"
+            alt=""
+            width={12}
+            height={12}
+            className="pointer-events-none absolute top-12 right-12 size-3"
+            aria-hidden
+          />
+        ) : null}
         <h3 className="font-montserrat w-full text-[length:var(--imagen-with-title-title-size)] leading-[var(--imagen-with-title-title-line-height)] font-normal tracking-[var(--imagen-with-title-title-letter-spacing)] uppercase">
           {title}
         </h3>
-        <p className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)]">
+        <p className="font-lora w-full text-[length:var(--imagen-with-title-paragraph-size)] leading-[var(--imagen-with-title-paragraph-line-height)] font-normal tracking-[var(--imagen-with-title-paragraph-letter-spacing)]">
           {description}
         </p>
       </div>

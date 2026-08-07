@@ -57,7 +57,7 @@ export function SectionCajaColor({
       >
         <div className="flex w-full max-w-[612px] flex-col items-start justify-center gap-24">
           {title ? (
-            <h2 className="font-montserrat w-full text-[length:var(--size-24)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+            <h2 className="font-montserrat w-full text-[length:var(--title-h2-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h2-size-desktop)]">
               {title}
             </h2>
           ) : null}

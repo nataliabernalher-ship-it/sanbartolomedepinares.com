@@ -41,11 +41,11 @@ export function SectionHeroImage({
 
       <div className="flex w-full max-w-[1280px] flex-col items-center gap-[19px] px-12">
         {accentText ? (
-          <p className="font-bad-script w-full text-center text-[24px] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100">
+          <p className="font-bad-script w-full text-center text-[length:var(--accent-text-size-mobile)] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100 sm:text-[length:var(--accent-text-size-desktop)]">
             {accentText}
           </p>
         ) : null}
-        <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--size-32)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+        <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--title-h1-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h1-size-desktop)]">
           {title}
         </h1>
         {description ? (

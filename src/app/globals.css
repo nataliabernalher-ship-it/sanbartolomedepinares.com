@@ -23,6 +23,10 @@
   --color-text-title: var(--text-title);
   --color-text-paragraph: var(--text-paragraph);
 
+  --color-link-default: var(--link-default);
+  --color-link-selected: var(--link-selected);
+  --color-link-hover: var(--link-hover);
+
   --color-background-white: var(--background-white);
   --color-background-blue: var(--background-blue);
   --color-background-green: var(--background-green);

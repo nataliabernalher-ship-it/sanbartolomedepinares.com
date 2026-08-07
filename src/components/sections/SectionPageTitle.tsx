@@ -22,11 +22,11 @@ export function SectionPageTitle({
         .join(" ")}
     >
       {accentText ? (
-        <p className="font-bad-script w-full text-center text-[24px] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100">
+        <p className="font-bad-script w-full text-center text-[length:var(--accent-text-size-mobile)] leading-[var(--line-height-32)] tracking-[var(--letter-spacing-0)] text-accent-100 sm:text-[length:var(--accent-text-size-desktop)]">
           {accentText}
         </p>
       ) : null}
-      <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--size-32)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase">
+      <h1 className="font-montserrat max-w-[800px] text-center text-[length:var(--title-h1-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h1-size-desktop)]">
         {title}
       </h1>
       <p className="font-lora max-w-[800px] text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph">

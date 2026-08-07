@@ -1,6 +1,7 @@
 /**
  * Design tokens tipados — espejo de Figma
  * Fuente: Figma `san-bartolo` (oFJPlzxOu28Muw49NtvugL)
+ * Actualizado desde `07. Componentes` (78:1159)
  */
 
 export const colors = {
@@ -29,6 +30,11 @@ export const colors = {
     title: "#1d292e",
     paragraph: "#000305",
   },
+  link: {
+    default: "#000305",
+    selected: "#000305",
+    hover: "#ffab8f",
+  },
   background: {
     white: "#ffffff",
     blue: "#9acce0",
@@ -51,12 +57,16 @@ export const fontSize = {
   16: "16px",
   18: "18px",
   20: "20px",
+  22: "22px",
   24: "24px",
+  26: "26px",
+  30: "30px",
   32: "32px",
   /** @deprecated usar imagenWithTitleTitle / --imagen-with-title-title-size */
   titleCard: "18px",
   textoBoton: "18px",
   imagenWithTitleTitle: "18px",
+  imagenWithTitleParagraph: "14px",
 } as const;
 
 export const fontWeight = {
@@ -74,6 +84,15 @@ export const letterSpacing = {
   0: "0px",
   2: "2px",
   4: "4px",
+} as const;
+
+/** Escalas responsive documentadas en Figma (móvil → desktop) */
+export const responsiveType = {
+  titleH1: { mobile: fontSize[24], desktop: fontSize[32] },
+  titleH2: { mobile: fontSize[20], desktop: fontSize[24] },
+  accentText: { mobile: fontSize[22], desktop: fontSize[24] },
+  logoNav: { mobile: fontSize[20], desktop: fontSize[24] },
+  logoFooter: { mobile: fontSize[26], desktop: fontSize[30] },
 } as const;
 
 export const gap = {
@@ -121,6 +140,7 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[2],
     textTransform: "uppercase" as const,
+    color: colors.link.default,
   },
   linkSelected: {
     fontFamily: fonts.montserrat,
@@ -129,7 +149,9 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[2],
     textTransform: "uppercase" as const,
+    color: colors.link.selected,
   },
+  /** Figma `Link hover` — bold + Accent/300 */
   linkHover: {
     fontFamily: fonts.montserrat,
     fontSize: fontSize[14],
@@ -137,7 +159,7 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[2],
     textTransform: "uppercase" as const,
-    color: colors.accent[300],
+    color: colors.link.hover,
   },
   titleH1: {
     fontFamily: fonts.montserrat,
@@ -180,6 +202,14 @@ export const textStyles = {
     letterSpacing: letterSpacing[4],
     textTransform: "uppercase" as const,
   },
+  /** Figma `ImagenWithTitle-Paragrap` */
+  imagenWithTitleParagraph: {
+    fontFamily: fonts.lora,
+    fontSize: fontSize.imagenWithTitleParagraph,
+    fontWeight: fontWeight[400],
+    lineHeight: lineHeight[24],
+    letterSpacing: letterSpacing[0],
+  },
   subtitle: {
     fontFamily: fonts.lora,
     fontSize: fontSize[16],
@@ -194,7 +224,7 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[0],
   },
-  /** Figma `Texto boton` — Montserrat 18 (antes Bad Script 20) */
+  /** Figma `Texto boton` — Montserrat 18 */
   button: {
     fontFamily: fonts.montserrat,
     fontSize: fontSize.textoBoton,

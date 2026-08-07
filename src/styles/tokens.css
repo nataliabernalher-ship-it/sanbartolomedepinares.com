@@ -1,7 +1,7 @@
 /**
  * Design tokens — San Bartolomé de Pinares
  * Fuente: Figma `san-bartolo` (oFJPlzxOu28Muw49NtvugL)
- * Extraídos de page_home, el municipio, las_luminarias
+ * Actualizado desde `07. Componentes` (78:1159) — tipografía móvil, cards, links
  */
 
 :root {
@@ -30,6 +30,11 @@
   --text-title: #1d292e;
   --text-paragraph: #000305;
 
+  /* ——— Color / Link ——— */
+  --link-default: var(--neutral-600);
+  --link-selected: var(--neutral-600);
+  --link-hover: var(--accent-300);
+
   /* ——— Color / Background (aliases semánticos) ——— */
   --background-white: #ffffff;
   --background-blue: #9acce0;
@@ -43,7 +48,10 @@
   --size-16: 16px;
   --size-18: 18px;
   --size-20: 20px;
+  --size-22: 22px;
   --size-24: 24px;
+  --size-26: 26px;
+  --size-30: 30px;
   --size-32: 32px;
 
   /* ——— Weight ——— */
@@ -73,8 +81,31 @@
   --imagen-with-title-title-line-height: var(--line-height-32);
   --imagen-with-title-title-letter-spacing: var(--letter-spacing-4);
 
+  /* ImagenWithTitle-Paragrap — Lora Regular 14 / 24 / 0 */
+  --imagen-with-title-paragraph-size: var(--size-14);
+  --imagen-with-title-paragraph-weight: var(--weight-400);
+  --imagen-with-title-paragraph-line-height: var(--line-height-24);
+  --imagen-with-title-paragraph-letter-spacing: var(--letter-spacing-0);
+
   /* Alias legacy TitleCard → ImagenWithTitle-Title */
   --size-title-card: var(--imagen-with-title-title-size);
+
+  /* ——— Typography / Responsive (móvil → desktop) ——— */
+  /* Title h1: 24 móvil / 32 desktop */
+  --title-h1-size-mobile: var(--size-24);
+  --title-h1-size-desktop: var(--size-32);
+  /* Title h2: 20 móvil / 24 desktop */
+  --title-h2-size-mobile: var(--size-20);
+  --title-h2-size-desktop: var(--size-24);
+  /* Accent Text: 22 móvil / 24 desktop */
+  --accent-text-size-mobile: var(--size-22);
+  --accent-text-size-desktop: var(--size-24);
+  /* Logo nav: 20 móvil / 24 desktop */
+  --logo-nav-size-mobile: var(--size-20);
+  --logo-nav-size-desktop: var(--size-24);
+  /* Logo footer: 26 móvil / 30 desktop */
+  --logo-footer-size-mobile: var(--size-26);
+  --logo-footer-size-desktop: var(--size-30);
 
   /* ——— Gap ——— */
   --gap-2: 2px;

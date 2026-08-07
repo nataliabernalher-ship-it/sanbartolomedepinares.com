@@ -37,7 +37,7 @@ export function Footer({ className }: FooterProps) {
 
       <NextLink
         href="/"
-        className="font-dm-serif text-center text-[30px] leading-6 text-neutral-500"
+        className="font-dm-serif text-center text-[length:var(--logo-footer-size-mobile)] leading-6 text-neutral-500 lg:text-[length:var(--logo-footer-size-desktop)]"
       >
         San Bartolomé de Pinares
       </NextLink>

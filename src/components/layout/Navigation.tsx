@@ -42,7 +42,7 @@ export function Navigation({ className }: NavigationProps) {
       <div className="flex w-full items-center justify-between px-16 py-24 lg:p-40">
         <NextLink
           href="/"
-          className="font-dm-serif shrink-0 text-center text-[20px] leading-6 text-neutral-600 whitespace-nowrap lg:text-[24px]"
+          className="font-dm-serif shrink-0 text-center text-[length:var(--logo-nav-size-mobile)] leading-6 text-neutral-600 whitespace-nowrap lg:text-[length:var(--logo-nav-size-desktop)]"
         >
           San Bartolomé de Pinares
         </NextLink>
