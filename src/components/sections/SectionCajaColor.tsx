@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 export type SectionCajaColorLayout = "default" | "reverse";
 
-export type SectionCajaColorVariant = "coral" | "green" | "blue" | "white";
+export type SectionCajaColorVariant = "coral" | "green" | "blue" | "grey" | "white";
 
 export type SectionCajaColorProps = {
   title?: string;
@@ -20,6 +20,7 @@ const backgroundByColor: Record<SectionCajaColorVariant, string> = {
   coral: "bg-background-coral",
   green: "bg-background-green",
   blue: "bg-background-blue",
+  grey: "bg-background-grey",
   white: "bg-background-white",
 };
 

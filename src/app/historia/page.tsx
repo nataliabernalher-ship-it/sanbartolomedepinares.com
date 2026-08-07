@@ -21,7 +21,7 @@ const historias = [
     description: "Párrafo introductorio de la subcategoría",
     imageSrc: "/images/historia/guerra-napoleon.png",
     imageAlt: "Grabado de la guerra de la Independencia",
-    href: "/historia/guerra-de-la-independencia",
+    href: "/historia/guerra-napoleon",
   },
   {
     title: "Cascorro",
