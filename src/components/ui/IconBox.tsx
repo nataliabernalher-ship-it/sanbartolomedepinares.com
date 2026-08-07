@@ -47,6 +47,18 @@ export function IconBox({
 
   const content = (
     <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/icons/arrow-up-right.svg"
+        alt=""
+        width={12}
+        height={12}
+        className={[
+          "pointer-events-none absolute top-20 right-[15.5px] size-3",
+          href ? "block" : "hidden",
+        ].join(" ")}
+        aria-hidden
+      />
       <span className="relative size-14 shrink-0 overflow-hidden">
         <Image
           src={src}
@@ -64,7 +76,7 @@ export function IconBox({
   );
 
   const classes = [
-    "flex w-full max-w-[290px] flex-col items-center gap-12 rounded-m px-24 py-20",
+    "relative flex w-full max-w-[290px] flex-col items-center gap-12 rounded-m px-24 py-20",
     config.background,
     href ? "transition-opacity hover:opacity-90" : "",
     className ?? "",
