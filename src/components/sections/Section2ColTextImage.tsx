@@ -10,6 +10,8 @@ export type Section2ColTextImageProps = {
   imageAlt?: string;
   /** `default`: texto | imagen · `reverse`: imagen | texto */
   layout?: Section2ColTextImageLayout;
+  /** Ajuste del object-fit de la imagen (mapas: `contain`) */
+  imageFit?: "cover" | "contain";
   className?: string;
 };
 
@@ -20,6 +22,7 @@ export function Section2ColTextImage({
   imageSrc,
   imageAlt = "",
   layout = "default",
+  imageFit = "cover",
   className,
 }: Section2ColTextImageProps) {
   const isReverse = layout === "reverse";
@@ -45,12 +48,19 @@ export function Section2ColTextImage({
         </div>
       </div>
 
-      <div className="relative h-[320px] w-full max-w-[612px] shrink-0 overflow-hidden rounded-s sm:h-[400px] lg:h-[488px]">
+      <div
+        className={[
+          "relative h-[320px] w-full max-w-[612px] shrink-0 overflow-hidden rounded-s sm:h-[400px] lg:h-[488px]",
+          imageFit === "contain" ? "bg-neutral-100" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover"
+          className={imageFit === "contain" ? "object-contain" : "object-cover"}
           sizes="(max-width: 612px) 100vw, 612px"
         />
       </div>

@@ -25,7 +25,7 @@ export function Section1ColTextOnly({
         <h2 className="font-montserrat max-w-[612px] text-[length:var(--title-h2-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h2-size-desktop)]">
           {title}
         </h2>
-        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&_p+_p]:mt-6">
+        <div className="font-lora w-full text-[length:var(--size-16)] leading-[var(--line-height-24)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph [&>*+*]:mt-6 [&_h3]:font-montserrat [&_h3]:text-[length:var(--size-16)] [&_h3]:leading-[var(--line-height-24)] [&_h3]:tracking-[var(--letter-spacing-4)] [&_h3]:text-text-title [&_h3]:uppercase">
           {children}
         </div>
       </div>

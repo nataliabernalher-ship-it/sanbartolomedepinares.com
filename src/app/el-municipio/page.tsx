@@ -103,7 +103,7 @@ export default function ElMunicipioPage() {
         backgroundClassName="bg-background-green"
         imageSrc="/images/el-municipio/comarca.jpg"
         imageAlt="Paisaje de la Tierra de Pinares"
-        buttonHref="/el-municipio/comarca-y-region"
+        buttonHref="/el-municipio/la-comarca"
         description={
           <>
             <p>
