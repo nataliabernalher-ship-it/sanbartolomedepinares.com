@@ -59,6 +59,15 @@
   --spacing-60: var(--gap-60);
   --spacing-80: var(--margin-80);
   --spacing-120: var(--padding-120);
+  --spacing-150: var(--padding-150);
+
+  /* Section spacing — Figma `Section-spacing` (responsive vía tokens.css) */
+  --spacing-section-l: var(--section-spacing-l);
+  --spacing-section-l-top: var(--section-spacing-l-top);
+  --spacing-section-l-bottom: var(--section-spacing-l-bottom);
+  --spacing-section-xl: var(--section-spacing-xl);
+  --spacing-section-xl-top: var(--section-spacing-xl-top);
+  --spacing-section-xl-bottom: var(--section-spacing-xl-bottom);
 }
 
 body {

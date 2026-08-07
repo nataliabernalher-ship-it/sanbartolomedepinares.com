@@ -15,7 +15,7 @@ export function SectionPageTitle({
   return (
     <section
       className={[
-        "flex w-full flex-col items-center gap-16 bg-background-grey-light px-12 pt-40",
+        "flex w-full flex-col items-center gap-16 bg-background-grey-light px-12 pt-section-l-top",
         className ?? "",
       ]
         .filter(Boolean)

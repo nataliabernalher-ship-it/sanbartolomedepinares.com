@@ -30,7 +30,7 @@ export function Section2ColTextImage({
   return (
     <section
       className={[
-        "flex w-full flex-col content-center items-center justify-center bg-neutral-100 px-12 pt-80 pb-40 lg:flex-row lg:flex-wrap",
+        "flex w-full flex-col content-center items-center justify-center bg-neutral-100 px-12 py-section-l lg:flex-row lg:flex-wrap",
         isReverse ? "gap-[39px] lg:flex-row-reverse" : "gap-32",
         className ?? "",
       ]

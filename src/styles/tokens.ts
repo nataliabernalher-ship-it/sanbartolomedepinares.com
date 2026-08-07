@@ -117,12 +117,26 @@ export const padding = {
   36: "36px",
   40: "40px",
   120: "120px",
+  150: "150px",
 } as const;
 
 export const margin = {
+  16: "16px",
   40: "40px",
   60: "60px",
   80: "80px",
+} as const;
+
+/** Figma `Section-spacing` — padding vertical de secciones (móvil → desktop) */
+export const sectionSpacing = {
+  l: {
+    mobile: { top: "24px", bottom: "24px" },
+    desktop: { top: "40px", bottom: "40px" },
+  },
+  xl: {
+    mobile: { top: "40px", bottom: "40px" },
+    desktop: { top: "80px", bottom: "80px" },
+  },
 } as const;
 
 export const radii = {

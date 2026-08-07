@@ -41,7 +41,7 @@ export default function HistoriaPage() {
         description="Conocer la historia de San Bartolomé de Pinares es comprender la evolución de un municipio marcado por su patrimonio, sus tradiciones y el carácter de sus vecinos. Un recorrido por su pasado permite entender la identidad que hoy define a la localidad."
       />
 
-      <section className="flex w-full flex-col items-center bg-background-grey-light px-12 py-80">
+      <section className="flex w-full flex-col items-center bg-background-grey-light px-12 py-section-xl">
         <div className="flex w-full max-w-[1260px] flex-wrap content-start items-start justify-center gap-20">
           {historias.map((item) => (
             <ImageWithTitle

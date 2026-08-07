@@ -96,7 +96,6 @@ export default function GuerraNapoleonPage() {
         imageSrc="/images/historia/guerra-napoleon/2.png"
         imageAlt="Iglesia y caserío de San Bartolomé de Pinares"
         layout="reverse"
-        className="!pt-40 !pb-40"
       >
         <p>
           La situación se agrava sobremanera cuando el día 9 de julio de 1810
@@ -129,7 +128,6 @@ export default function GuerraNapoleonPage() {
         imageSrc="/images/historia/guerra-napoleon/3.png"
         imageAlt="Soldados en la plaza del municipio durante la ocupación"
         layout="default"
-        className="!pt-40 !pb-40"
       >
         <p>
           El año 1813 fue especialmente problemático. Ante las urgencias

@@ -15,7 +15,7 @@ export function SectionBackToCategory({
   return (
     <section
       className={[
-        "flex w-full items-center justify-center bg-neutral-100 px-12 py-40",
+        "flex w-full items-center justify-center bg-neutral-100 px-12 pt-16 pb-section-l-bottom",
         className ?? "",
       ]
         .filter(Boolean)

@@ -42,7 +42,7 @@ export function SectionCajaColor({
   return (
     <section
       className={[
-        "flex w-full justify-center bg-neutral-100 px-12 py-40",
+        "flex w-full justify-center bg-neutral-100 px-12 py-section-l",
         className ?? "",
       ]
         .filter(Boolean)

@@ -128,11 +128,24 @@
   --padding-36: 36px;
   --padding-40: 40px;
   --padding-120: 120px;
+  /* FirstSection — móvil 80 / desktop 150 (override en @media sm) */
+  --padding-150: 80px;
 
   /* ——— Margin ——— */
+  --margin-16: 16px;
   --margin-40: 40px;
   --margin-60: 60px;
   --margin-80: 80px;
+
+  /* ——— Section spacing (Figma `Section-spacing`) ——— */
+  /* Mobile first → desktop en @media (sm) — modos Dimensions */
+  --section-spacing-l-top: 24px;
+  --section-spacing-l-bottom: 24px;
+  --section-spacing-xl-top: 40px;
+  --section-spacing-xl-bottom: 40px;
+  /* Alias simétrico (top = bottom) para `py-section-l` / `py-section-xl` */
+  --section-spacing-l: var(--section-spacing-l-top);
+  --section-spacing-xl: var(--section-spacing-xl-top);
 
   /* ——— Radii ——— */
   --radii-xs: 4px;
@@ -143,4 +156,15 @@
   --content-max: 1200px;
   --text-max: 1000px;
   --page-width: 1920px;
+}
+
+/* Desktop — valores Figma modo Desktop */
+@media (min-width: 640px) {
+  :root {
+    --section-spacing-l-top: 40px;
+    --section-spacing-l-bottom: 40px;
+    --section-spacing-xl-top: 80px;
+    --section-spacing-xl-bottom: 80px;
+    --padding-150: 150px;
+  }
 }

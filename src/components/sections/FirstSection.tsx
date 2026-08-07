@@ -64,7 +64,7 @@ export function FirstSection({
     <section
       ref={sectionRef}
       className={[
-        "relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-12 py-120",
+        "relative flex w-full flex-col items-center justify-center gap-24 overflow-hidden px-12 py-150",
         className ?? "",
       ]
         .filter(Boolean)

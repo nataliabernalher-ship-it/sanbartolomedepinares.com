@@ -25,7 +25,7 @@ export default function LaComarcaPage() {
         imageAlt="Mapa de la comarca Valle del Alberche y Tierra de Pinares"
         layout="default"
         imageFit="contain"
-        className="!pt-40 !pb-16"
+        className="!pt-section-l-top !pb-16"
       >
         <p>
           Comarca turística por excelencia, muy próxima a Madrid, y llena de
@@ -183,7 +183,7 @@ export default function LaComarcaPage() {
         imageAlt="Mapa de España con la provincia de Ávila destacada"
         layout="default"
         imageFit="contain"
-        className="!bg-background-green !pt-80 !pb-40"
+        className="!bg-background-green !pt-section-xl-top !pb-section-l-bottom"
       >
         <p>
           La provincia de Avila es una de las que comprende el antiguo Reino de
@@ -216,7 +216,7 @@ export default function LaComarcaPage() {
         imageSrc="/images/el-municipio/la-comarca/hero.png"
         imageAlt="Vista aérea de un pueblo de la comarca"
         layout="reverse"
-        className="!bg-background-green !pt-40 !pb-80"
+        className="!bg-background-green !pt-section-l-top !pb-section-xl-bottom"
       >
         <p>
           Hidrográficamente está regada por afluentes de los ríos Duero y Tajo.

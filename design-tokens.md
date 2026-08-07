@@ -107,8 +107,26 @@ Implementación en código:
 | Tipo | Valores (px) |
 |------|----------------|
 | Gap | 2, 4, 8, 12, 16, 20, 24, 32, 40, 60 |
-| Padding | 4, 12, 16, 20, 24, 36, 40, 120 |
-| Margin | 40, 60, 80 |
+| Padding | 4, 12, 16, 20, 24, 36, 40, 120, **150** |
+| Margin | **16**, 40, 60, 80 |
+
+### Section spacing
+
+Padding vertical semántico de secciones — Figma `Section-spacing/{size}/{side}`.  
+Valores **responsive** (móvil → desktop desde `sm` / 640px), equivalentes a modos Dimensions.
+
+| Token Figma | Móvil | Desktop | CSS / Tailwind |
+|-------------|-------|---------|----------------|
+| Section-spacing/l/top | 24px | 40px | `--section-spacing-l-top` / `pt-section-l-top` |
+| Section-spacing/l/bottom | 24px | 40px | `--section-spacing-l-bottom` / `pb-section-l-bottom` |
+| Section-spacing/xl/top | 40px | 80px | `--section-spacing-xl-top` / `pt-section-xl-top` |
+| Section-spacing/xl/bottom | 40px | 80px | `--section-spacing-xl-bottom` / `pb-section-xl-bottom` |
+
+Atajos simétricos: `py-section-l`, `py-section-xl`.
+
+| Otro | Móvil | Desktop | Uso |
+|------|-------|---------|-----|
+| Padding/150 | 80px | 150px | `FirstSection` (`py-150`) |
 
 ---
 

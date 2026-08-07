@@ -100,7 +100,7 @@ export default function PrimerosPobladoresPage() {
         imageSrc="/images/historia/primeros-pobladores/2.png"
         imageAlt="Concesión de terrenos a la aldea en la Edad Media"
         layout="default"
-        className="!pt-40 !pb-16"
+        className="!pt-section-l-top !pb-16"
       >
         <p>
           En la progresión experimentada influyó sobremanera la ampliación del
@@ -126,7 +126,7 @@ export default function PrimerosPobladoresPage() {
         imageSrc="/images/historia/primeros-pobladores/3.png"
         imageAlt="Habitantes de la aldea en el paisaje del valle"
         layout="reverse"
-        className="!pt-16 !pb-40"
+        className="!pt-16 !pb-section-l-bottom"
       >
         <p>
           En virtud de la potestad que le otorgaba ser alcalde entregador de la
@@ -153,7 +153,6 @@ export default function PrimerosPobladoresPage() {
         imageSrc="/images/historia/primeros-pobladores/4.png"
         imageAlt="Pastor trashumante con rebaño en la Cañada Real"
         layout="default"
-        className="!pt-40 !pb-40"
       >
         <p>
           El paso de la Cañada Real Leonesa Oriental por el término municipal y
@@ -228,7 +227,7 @@ export default function PrimerosPobladoresPage() {
       </SectionCajaColor>
 
       <Section2ColTextOnly
-        className="!pt-40 !pb-80"
+        className="!pt-section-l-top !pb-section-xl-bottom"
         left={
           <>
             <p>

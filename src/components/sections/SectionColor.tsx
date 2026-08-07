@@ -48,7 +48,7 @@ export function SectionColor({
   return (
     <section
       className={[
-        "flex w-full flex-col items-center justify-center gap-32 px-12 py-80",
+        "flex w-full flex-col items-center justify-center gap-32 px-12 py-section-xl",
         backgroundByColor[color],
         className ?? "",
       ]

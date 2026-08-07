@@ -15,7 +15,7 @@ export function Section2ColTextOnly({
   return (
     <section
       className={[
-        "flex w-full flex-wrap content-start items-start justify-center gap-[39px] bg-neutral-100 px-12 py-80",
+        "flex w-full flex-wrap content-start items-start justify-center gap-[39px] bg-neutral-100 px-12 py-section-l",
         className ?? "",
       ]
         .filter(Boolean)

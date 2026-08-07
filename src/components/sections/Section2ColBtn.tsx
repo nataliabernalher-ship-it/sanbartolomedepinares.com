@@ -30,7 +30,7 @@ export function Section2ColBtn({
   return (
     <section
       className={[
-        "flex w-full flex-wrap content-center items-center justify-center gap-[42px] px-12 py-80",
+        "flex w-full flex-wrap content-center items-center justify-center gap-[42px] px-12 py-section-xl",
         backgroundClassName,
         className ?? "",
       ]
