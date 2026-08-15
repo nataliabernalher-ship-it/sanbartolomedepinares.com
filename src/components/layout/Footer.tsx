@@ -16,7 +16,7 @@ export function Footer({ className }: FooterProps) {
   return (
     <footer
       className={[
-        "relative flex w-full flex-col items-center justify-center gap-40",
+        "relative flex w-full flex-col items-center justify-center gap-16",
         "border-t border-solid border-neutral-200 bg-neutral-100",
         "overflow-hidden px-16 py-16 lg:pt-40 lg:pb-16",
         className ?? "",
@@ -25,8 +25,9 @@ export function Footer({ className }: FooterProps) {
         .join(" ")}
     >
       <nav
-        className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-60"
+        className="hidden"
         aria-label="Enlaces del pie"
+        aria-hidden="true"
       >
         {footerLinks.map((item) => (
           <Link key={item.href} href={item.href}>

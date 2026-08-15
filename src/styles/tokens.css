@@ -69,8 +69,10 @@
   --letter-spacing-4: 4px;
 
   /* ——— Typography / Semantic (text styles Figma) ——— */
-  /* Texto boton — Montserrat Regular 18 / 24 / 0 */
-  --texto-boton-size: var(--size-18);
+  /* Texto boton — Montserrat Regular 16 móvil / 18 desktop / LH 24 / tracking 0 */
+  --texto-boton-size-mobile: var(--size-16);
+  --texto-boton-size-desktop: var(--size-18);
+  --texto-boton-size: var(--texto-boton-size-desktop);
   --texto-boton-weight: var(--weight-400);
   --texto-boton-line-height: var(--line-height-24);
   --texto-boton-letter-spacing: var(--letter-spacing-0);

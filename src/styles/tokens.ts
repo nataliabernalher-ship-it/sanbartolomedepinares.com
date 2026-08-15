@@ -65,6 +65,7 @@ export const fontSize = {
   /** @deprecated usar imagenWithTitleTitle / --imagen-with-title-title-size */
   titleCard: "18px",
   textoBoton: "18px",
+  textoBotonMobile: "16px",
   imagenWithTitleTitle: "18px",
   imagenWithTitleParagraph: "14px",
 } as const;
@@ -91,6 +92,7 @@ export const responsiveType = {
   titleH1: { mobile: fontSize[24], desktop: fontSize[32] },
   titleH2: { mobile: fontSize[20], desktop: fontSize[24] },
   accentText: { mobile: fontSize[22], desktop: fontSize[24] },
+  textoBoton: { mobile: fontSize[16], desktop: fontSize[18] },
   logoNav: { mobile: fontSize[20], desktop: fontSize[24] },
   logoFooter: { mobile: fontSize[26], desktop: fontSize[30] },
 } as const;
@@ -238,10 +240,11 @@ export const textStyles = {
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[0],
   },
-  /** Figma `Texto boton` — Montserrat 18 */
+  /** Figma `Texto boton` — Montserrat 16 móvil / 18 desktop */
   button: {
     fontFamily: fonts.montserrat,
     fontSize: fontSize.textoBoton,
+    fontSizeMobile: fontSize.textoBotonMobile,
     fontWeight: fontWeight[400],
     lineHeight: lineHeight[24],
     letterSpacing: letterSpacing[0],

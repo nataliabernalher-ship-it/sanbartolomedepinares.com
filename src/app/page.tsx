@@ -11,7 +11,7 @@ export default function Home() {
       <SectionColor
         color="blue"
         title="Características del municipio"
-        description="La riqueza patrimonial y natural de San Bartolomé de Pinares se descubre en cada rincón. Iglesias, ermitas, paisajes de pinares y espacios cargados de historia convierten el municipio en un lugar donde tradición y naturaleza se encuentran."
+        description="El lugar en el que se halla, a que se dedica su gente y las actividades que en él se desarrollan nos hará tener un conocimiento de la situación actual de nuestro pueblo."
         images={[
           {
             src: "/images/home/mapa.png",

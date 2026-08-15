@@ -80,6 +80,7 @@ Implementación en código:
 | Title h1 | 24 | 32 | `--title-h1-size-mobile` / `-desktop` |
 | Title h2 | 20 | 24 | `--title-h2-size-mobile` / `-desktop` |
 | Accent Text | 22 | 24 | `--accent-text-size-mobile` / `-desktop` |
+| Texto boton | 16 | 18 | `--texto-boton-size-mobile` / `-desktop` |
 | Logo nav | 20 | 24 | `--logo-nav-size-mobile` / `-desktop` |
 | Logo footer | 26 | 30 | `--logo-footer-size-mobile` / `-desktop` |
 
@@ -97,7 +98,7 @@ Implementación en código:
 | ImagenWithTitle-Paragrap | Lora | **14** | 400 | 24 | 0 | — | — |
 | Subtitle | Lora | 16 | 400 | 26 | 0 | — | — |
 | Paragraph | Lora | 16 | 400 | 24 | 0 | — | — |
-| Texto boton | Montserrat | 18 | 400 | 24 | 0 | uppercase | — |
+| Texto boton | Montserrat | **16 móvil / 18 desktop** | 400 | 24 | 0 | uppercase | — |
 | Accent Text | Bad Script | 24 | 400 | 32 | 0 | — | Accent/100 |
 
 ---
