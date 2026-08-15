@@ -27,7 +27,7 @@ export function HeroHome({
         alt={imageAlt}
         fill
         priority
-        className="object-cover"
+        className="hero-home-media object-cover"
         sizes="100vw"
       />
     </section>

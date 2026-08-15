@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { Reveal } from "@/components/motion/Reveal";
 
 export type FirstSectionProps = {
   accentText?: string;
@@ -83,15 +84,21 @@ export function FirstSection({
         </div>
       ) : null}
 
-      <p className="font-bad-script relative z-10 w-full text-center text-[length:var(--accent-text-size-mobile)] leading-[var(--line-height-24)] text-accent-100 sm:text-[length:var(--accent-text-size-desktop)]">
-        {accentText}
-      </p>
-      <h1 className="font-montserrat relative z-10 max-w-[900px] text-center text-[length:var(--title-h1-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h1-size-desktop)]">
-        {title}
-      </h1>
-      <p className="font-lora relative z-10 max-w-[820px] text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph">
-        {description}
-      </p>
+      <Reveal className="relative z-10 w-full" delayMs={80}>
+        <p className="font-bad-script w-full text-center text-[length:var(--accent-text-size-mobile)] leading-[var(--line-height-24)] text-accent-100 sm:text-[length:var(--accent-text-size-desktop)]">
+          {accentText}
+        </p>
+      </Reveal>
+      <Reveal className="relative z-10 w-full max-w-[900px]" delayMs={180}>
+        <h1 className="font-montserrat text-center text-[length:var(--title-h1-size-mobile)] leading-[var(--line-height-32)] font-normal tracking-[var(--letter-spacing-4)] text-text-title uppercase sm:text-[length:var(--title-h1-size-desktop)]">
+          {title}
+        </h1>
+      </Reveal>
+      <Reveal className="relative z-10 w-full max-w-[820px]" delayMs={280}>
+        <p className="font-lora text-center text-[length:var(--size-16)] leading-[var(--line-height-26)] font-normal tracking-[var(--letter-spacing-0)] text-text-paragraph">
+          {description}
+        </p>
+      </Reveal>
     </section>
   );
 }

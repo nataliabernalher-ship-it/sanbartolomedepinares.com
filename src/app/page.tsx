@@ -49,7 +49,7 @@ export default function Home() {
       <SectionColor
         color="white"
         title="Fiestas y tradiciones"
-        description="Las fiestas y tradiciones de San Bartolomé de Pinares reflejan la identidad y el carácter de un pueblo profundamente ligado a sus raíces. Celebraciones centenarias, costumbres populares y la participación de sus vecinos mantienen vivo un legado que se transmite de generación en generación."
+        description="Celebraciones centenarias, costumbres populares y la participación de sus vecinos mantienen vivo un legado que se transmite de generación en generación. Descubre las fiestas de San Bartolo."
         images={[
           {
             src: "/images/home/fiestas-1.png",
