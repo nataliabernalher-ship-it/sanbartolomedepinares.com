@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navigation } from "@/components/layout/Navigation";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -34,6 +35,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "San Bartolomé de Pinares",
   description:
     "Municipio de Ávila: historia, fiestas, lugares de interés e información útil para vecinos y visitantes.",
