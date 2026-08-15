@@ -11,21 +11,21 @@ export const metadata: Metadata = {
 const historias = [
   {
     title: "Primeros pobladores",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Desde el siglo XII hasta la actualidad.",
     imageSrc: "/images/historia/primeros-pobladores.png",
     imageAlt: "Vista histórica del municipio",
     href: "/historia/primeros-pobladores",
   },
   {
     title: "La guerra de Napoleón",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "La ocupación francesa del pueblo.",
     imageSrc: "/images/historia/guerra-napoleon.png",
     imageAlt: "Grabado de la guerra de la Independencia",
     href: "/historia/guerra-napoleon",
   },
   {
     title: "Cascorro",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Hijo adoptivo de San Bartolo.",
     imageSrc: "/images/historia/cascorro.png",
     imageAlt: "Estatua de Cascorro",
     href: "/historia/cascorro",
