@@ -101,7 +101,7 @@ export default function LugaresDeInteresPage() {
         description="Descubre los lugares más representativos de San Bartolomé de Pinares y adéntrate en un municipio donde historia, patrimonio y naturaleza se unen para ofrecer una experiencia auténtica."
       />
 
-      <section className="flex w-full flex-col items-center bg-neutral-200/20 px-12 py-40">
+      <section className="flex w-full flex-col items-center bg-neutral-200/20 px-12 pt-40 pb-80">
         <div className="flex w-full max-w-[1264px] flex-wrap content-start items-start justify-center gap-24">
           {lugares.map((lugar) => (
             <ImageWithTitle

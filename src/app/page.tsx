@@ -86,6 +86,7 @@ export default function Home() {
           },
         ]}
         buttonHref="/historia"
+        className="!pb-[calc(var(--section-spacing-xl-bottom)*2)]"
       />
     </main>
   );

@@ -32,41 +32,41 @@ const fiestas = [
   },
   {
     title: "Semana Santa",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Procesiones, pasos y ceremonias",
     imageSrc: "/images/fiestas-tradiciones/semana-santa.png",
     imageAlt: "Procesión de Semana Santa por el pueblo",
     href: "/fiestas-y-tradiciones/semana-santa",
   },
   {
     title: "Las Águedas",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Las mujeres toman el mando",
     imageSrc: "/images/fiestas-tradiciones/aguedas.png",
     imageAlt: "Mujeres con traje tradicional en las Águedas",
   },
   {
     title: "El Belén",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Celebración de la Navidad",
     imageSrc: "/images/fiestas-tradiciones/belen.png",
     imageAlt: "Belén tradicional del municipio",
     href: "/fiestas-y-tradiciones/el-belen",
   },
   {
     title: "Camino de Santiago",
-    description: "Somos punto en el camino de Levante",
+    description: "Somos parada en el camino de Levante",
     imageSrc: "/images/fiestas-tradiciones/camino-santiago.png",
     imageAlt: "Mapa del Camino de Levante",
     href: "/fiestas-y-tradiciones/camino-santiago",
   },
   {
     title: "Sonsoles",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Peregrinación a pie o a caballo",
     imageSrc: "/images/fiestas-tradiciones/sonsoles/hero.png",
     imageAlt: "Santuario de Sonsoles",
     href: "/fiestas-y-tradiciones/sonsoles",
   },
   {
     title: "Gastronomía",
-    description: "Párrafo introductorio de la subcategoría",
+    description: "Postres típicos y recetas tradicionales",
     imageSrc: "/images/fiestas-tradiciones/gastronomia.png",
     imageAlt: "Rosquillas tradicionales",
     href: "/fiestas-y-tradiciones/gastronomia",
@@ -82,7 +82,7 @@ export default function FiestasYTradicionesPage() {
         description="En San Bartolomé de Pinares las tradiciones no solo se recuerdan, se viven. A lo largo del año, sus fiestas reúnen a vecinos y visitantes para celebrar costumbres centenarias que mantienen viva la esencia del municipio."
       />
 
-      <section className="flex w-full flex-col items-center bg-background-grey-light px-12 py-40">
+      <section className="flex w-full flex-col items-center bg-background-grey-light px-12 pt-40 pb-80">
         <div className="flex w-full max-w-[1264px] flex-wrap content-start items-start justify-center gap-24">
           {fiestas.map((fiesta) => (
             <ImageWithTitle

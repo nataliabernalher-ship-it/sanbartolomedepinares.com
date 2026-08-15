@@ -102,6 +102,7 @@ export default function ElMunicipioPage() {
         imageSrc="/images/el-municipio/comarca.jpg"
         imageAlt="Paisaje de la Tierra de Pinares"
         buttonHref="/el-municipio/la-comarca"
+        className="!pb-[calc(var(--section-spacing-xl-bottom)*2)]"
         description={
           <>
             <p>
