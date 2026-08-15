@@ -25,7 +25,6 @@ export default function ElMunicipioPage() {
           {
             label: "Datos demográficos",
             color: "green",
-            href: "/el-municipio/demografia",
           },
           {
             label: "Encuadre municipal",
@@ -40,7 +39,6 @@ export default function ElMunicipioPage() {
           {
             label: "Actividades socioeconómicas",
             color: "grey",
-            href: "/el-municipio/actividades-socioeconomicas",
           },
         ]}
       />

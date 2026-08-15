@@ -47,18 +47,17 @@ export function IconBox({
 
   const content = (
     <>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/icons/arrow-up-right.svg"
-        alt=""
-        width={12}
-        height={12}
-        className={[
-          "pointer-events-none absolute top-20 right-[15.5px] size-3",
-          href ? "block" : "hidden",
-        ].join(" ")}
-        aria-hidden
-      />
+      {href ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src="/icons/arrow-up-right.svg"
+          alt=""
+          width={12}
+          height={12}
+          className="pointer-events-none absolute top-20 right-[15.5px] size-3"
+          aria-hidden
+        />
+      ) : null}
       <span className="relative size-14 shrink-0 overflow-hidden">
         <Image
           src={src}
